@@ -14,9 +14,9 @@ df = res %>% content(.,as="text", encoding="UTF-8") %>% jsonlite::fromJSON() %>%
 
 write.csv(df, file = "output/RoadConstructionTPC.csv",row.names = F, fileEncoding = "UTF-8")
 
-password = readRDS("password.rds")
+
 pg = dbDriver("PostgreSQL")
-con = dbConnect(pg, user="postgres", password=password, 
+con = dbConnect(pg, user="postgres", password="545703", 
                 host='localhost', port=5432, dbname="findata")
 
 
