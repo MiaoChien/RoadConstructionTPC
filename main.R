@@ -16,8 +16,8 @@ write.csv(df, file = "output/RoadConstructionTPC.csv",row.names = F, fileEncodin
 
 
 pg = dbDriver("PostgreSQL")
-con = dbConnect(pg, user="postgres", password="545703", 
-                host='localhost', port=5432, dbname="findata")
+con = dbConnect(pg, user="postgres", password="******", 
+                host='localhost', port=5432, dbname="****")
 
 
 # dbGetQuery(con, "SELECT id, name FROM parking_twd97")
